@@ -1,11 +1,11 @@
 return {
-  {
-    "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-  },
-  {
-    "nvim-telescope/telescope-fzf-native.nvim",
-    lazy = true,
-    run = "make",
-  },
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
+	{
+		"nvim-telescope/telescope-fzf-native.nvim",
+		lazy = true,
+		run = "make",
+	},
 }

@@ -13,6 +13,7 @@ end
 function M.setup()
   load('core.settings')
   load('core.keymaps')
+  load('core.autocmds')
 
 
   lazy.path = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'

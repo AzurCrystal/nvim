@@ -36,6 +36,7 @@ opt.updatetime = 200
 opt.laststatus = 0
 opt.list = true
 
-opt.conceallevel = 2
+opt.conceallevel = 2 -- Markdown Hiding
 
+opt.cc = "80"
 vim.g.markdown_recommended_style = 0
