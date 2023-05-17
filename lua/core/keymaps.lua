@@ -1,0 +1,1 @@
+--vim.keymap.set({'n','x'},'x','"_x"')
