@@ -3,7 +3,6 @@ vim.g.maplocalleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-
 local opt = vim.opt
 
 opt.encoding = "UTF-8"
@@ -30,13 +29,14 @@ opt.undolevels = 10000
 opt.splitkeep = "screen"
 opt.termguicolors = true
 
-opt.shortmess:append({ W = true,I = true, c = true, C = true})
+opt.shortmess:append({ W = true, I = true, c = true, C = true })
 opt.updatetime = 200
 
 opt.laststatus = 0
 opt.list = false
 
 opt.conceallevel = 2 -- Markdown Hiding
+opt.hlsearch = false
 
 opt.cc = "80"
 vim.g.markdown_recommended_style = 0

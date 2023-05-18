@@ -62,6 +62,14 @@ return {
 					"lua_ls",
 					"rust_analyzer",
 					"marksman",
+					"jsonls",
+					"bashls",
+					"ansiblels",
+					"gopls",
+					"ruff_lsp",
+					"taplo",
+					"typst_lsp",
+					"yamlls",
 				},
 			}
 			require("mason-lspconfig").setup(opts)
@@ -119,6 +127,10 @@ return {
 			})
 			-- Markdown
 			lspconfig.marksman.setup({})
+			-- json
+			lspconfig.jsonls.setup({})
+			-- bash
+			lspconfig.bashls.setup({})
 		end,
 	},
 	{
@@ -246,6 +258,7 @@ return {
 
 				sources = {
 					require("null-ls").builtins.formatting.stylua,
+					require("null-ls").builtins.formatting.fixjson,
 				},
 			})
 		end,

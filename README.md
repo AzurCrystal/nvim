@@ -13,7 +13,15 @@
 - [Build your first lua config for neovim](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 - [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim)
 - [Nvim-Lua-Guide](https://github.com/glepnir/nvim-lua-guide-zh)
-'
+
+## 依赖
+
+本仓库依赖如下外部应用：
+
+- stylua
+- fixjson
+- ccls
+
 ## 插件列表
 
 #TODO
@@ -22,6 +30,8 @@
 - Onedark.nvim
 - Nvim.tree
 - Mason.nvim
+- Mason.lspconfig
+- Nvim.lspconfig
 - Nvim.treesitter
 - Telescope.nvim
 - Obsidian.nvim
