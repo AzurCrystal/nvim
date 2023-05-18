@@ -5,7 +5,8 @@ return {
 		config = function()
 			local opts = {
 				theme = "onedark",
-			}, require("lualine").setup()
+			}
+			require("lualine").setup(opts)
 		end,
 	},
 	{
@@ -15,7 +16,8 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			local opts = {}, require("nvim-tree").setup(opts)
+			local opts = {}
+			require("nvim-tree").setup(opts)
 		end,
 	},
 	{
@@ -33,5 +35,9 @@ return {
 		init = function()
 			vim.notify = require("notify")
 		end,
+	},
+	{
+		"folke/noice.nvim",
+		--config =
 	},
 }

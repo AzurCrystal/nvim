@@ -1,6 +1,6 @@
 # AzurCrystal's neovim config
 
-> **Warning** 
+> **Warning**   
 > 此配置文件正处于快速迭代中。
 > **请勿**直接参考。
 

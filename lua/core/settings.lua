@@ -34,7 +34,7 @@ opt.shortmess:append({ W = true,I = true, c = true, C = true})
 opt.updatetime = 200
 
 opt.laststatus = 0
-opt.list = true
+opt.list = false
 
 opt.conceallevel = 2 -- Markdown Hiding
 
