@@ -35,5 +35,7 @@
 - Nvim.treesitter
 - Telescope.nvim
 - Obsidian.nvim
+- Gitsign.nvim
+- Rust-tools.nvim
 
 
