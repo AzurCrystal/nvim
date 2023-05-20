@@ -24,11 +24,13 @@
 
 ## 插件列表
 
-#TODO
+<!-- TODO: 完善插件列表 -->
 
 - Lazy.nvim
 - Onedark.nvim
 - Nvim.tree
+- Nvim.cmp
+- Luasnip
 - Mason.nvim
 - Mason.lspconfig
 - Nvim.lspconfig
