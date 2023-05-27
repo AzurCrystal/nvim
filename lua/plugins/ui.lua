@@ -22,7 +22,8 @@ return {
 	},
 	{
 		"rcarriga/nvim-notify",
-		lazy = true,
+		event = "VeryLazy",
+
 		opts = {
 			timeout = 3000,
 			max_height = function()
@@ -38,6 +39,7 @@ return {
 	},
 	{
 		"folke/noice.nvim",
+		event = "VeryLazy",
 		dependencies = {
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",

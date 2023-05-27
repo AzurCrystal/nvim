@@ -32,6 +32,9 @@ opt.termguicolors = true
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
 opt.updatetime = 200
 
+opt.grepformat = "%f:%l:%c:%m"
+opt.grepprg = "rg --vimgrep"
+
 opt.laststatus = 0
 opt.list = false
 

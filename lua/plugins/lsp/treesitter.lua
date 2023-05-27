@@ -26,6 +26,7 @@ return {
 			"vim",
 			"vimdoc",
 			"yaml",
+			"latex",
 		},
 	},
 	config = function(_, opts)

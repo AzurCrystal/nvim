@@ -27,6 +27,8 @@ return {
 			sources = {
 				require("null-ls").builtins.formatting.stylua,
 				require("null-ls").builtins.formatting.fixjson,
+				require("null-ls").builtins.formatting.yamlfmt,
+				require("null-ls").builtins.formatting.yapf,
 			},
 		})
 	end,

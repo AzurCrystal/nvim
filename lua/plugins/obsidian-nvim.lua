@@ -28,14 +28,6 @@ return {
 	opts = {
 		dir = "~/Workspace", -- no need to call 'vim.fn.expand' here
 
-		-- Optional, if you keep notes in a specific subdirectory of your vault.
-		notes_subdir = "notes",
-
-		-- Optional, if you keep daily notes in a separate directory.
-		daily_notes = {
-			folder = "notes/dailies",
-		},
-
 		-- Optional, completion.
 		completion = {
 			nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
