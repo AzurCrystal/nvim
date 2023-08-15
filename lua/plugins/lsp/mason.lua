@@ -23,6 +23,7 @@ return {
 				"taplo",
 				"typst_lsp",
 				"yamlls",
+				"csharp-ls",
 			},
 		}
 		require("mason-lspconfig").setup(opts)

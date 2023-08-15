@@ -1,4 +1,4 @@
-local autocmd = vim.api.nvim_create_autocmd({
+vim.api.nvim_create_autocmd({
 	"BufRead",
 	"BufNewFile",
 }, {
@@ -11,5 +11,12 @@ local autocmd = vim.api.nvim_create_autocmd({
 	},
 	callback = function()
 		vim.bo.filetype = "systemd"
+	end,
+})
+
+vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+	pattern = { "*" },
+	callback = function()
+		vim.api.nvim_exec('silent! normal! g`"zv', false)
 	end,
 })

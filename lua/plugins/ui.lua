@@ -16,8 +16,31 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			local opts = {}
-			require("nvim-tree").setup(opts)
+			local api = require("nvim-tree.api")
+			local function my_on_attach(bufnr)
+				local function bufopts(desc)
+					return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+				end
+
+				-- default mappings
+				api.config.mappings.default_on_attach(bufnr)
+
+				-- custom mappings
+				vim.keymap.set("n", "<C-t>", api.tree.change_root_to_parent, bufopts("Up"))
+				vim.keymap.set("n", "?", api.tree.toggle_help, bufopts("Help"))
+			end
+
+			-- pass to setup along with your other options
+			require("nvim-tree").setup({
+				actions = {
+					open_file = {
+						quit_on_open = true,
+					},
+				},
+				auto_close = true,
+				on_attach = my_on_attach,
+			})
+			vim.keymap.set("n", "<A-n>", api.tree.toggle)
 		end,
 	},
 	{
@@ -69,6 +92,12 @@ return {
 			vim.o.timeout = true
 			vim.o.timeoutlen = 300
 			require("which-key").setup({})
+		end,
+	},
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup()
 		end,
 	},
 }

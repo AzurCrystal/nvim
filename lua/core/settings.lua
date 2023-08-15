@@ -6,6 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 local opt = vim.opt
 
 opt.encoding = "UTF-8"
+opt.fileencodings = "utf8,sjis,cp936,gb18030,big5"
 
 opt.smartcase = true
 opt.smartindent = true
